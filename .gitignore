@@ -1,0 +1,9 @@
+recalls.db
+.idea/workspace.xml
+Recalls/__pycache__/
+__pycache__/
+accounts/__pycache__/
+vrecalls/__pycache__/
+vrecalls/migrations/0002_register.py
+vrecalls/migrations/0003_auto_20170705_0233.py
+vrecalls/migrations/__pycache__/

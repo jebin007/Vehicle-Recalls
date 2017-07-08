@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block body %}
+<title> Home123 </title>
+
+     <form class="navbar-form navbar-left" role="search" method="get" action="#">
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" name="q" value="{{ request.GET.q }}">
+
+                </div>
+
+                <button type="submit" class="btn btn-default">Search</button>
+
+     </form>
+    </br>
+{% if all_recalls %}
+    <h1> There are recalls present!!</h1>
+{% endif %}
+    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>YEAR</th>
+                            <th>MAKE</th>
+                            <th>MODEL</th>
+                            <th>DEFECT</th>
+                            <th>CONSEQUENCE</th>
+                            <th>CORRECTIVE ACTION</th>
+                            <th>NOTES</th>
+                        </tr>
+                        </thead>
+
+{% for recalls in all_recalls %}
+    <tr>
+
+        <td>{{ recalls.yeartxt }}</td>
+        <td>{{ recalls.maketxt }}</td>
+        <td>{{ recalls.modeltxt }}</td>
+        <td>{{ recalls.desc_defect }}</td>
+        <td>{{ recalls.conequence_defect }}</td>
+        <td>{{ recalls.corrective_action }}</td>
+        <td>{{ recalls.notes }}</td>
+
+    </tr>
+{% endfor %}
+    </table>
+{% endblock %}
