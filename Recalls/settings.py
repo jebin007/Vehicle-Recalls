@@ -59,8 +59,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')]
         ,
-        'APP_DIRS': True,
-        'OPTIONS': {
+        'APP_DIRS': Tr        'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -125,7 +124,7 @@ STATIC_URL = '/static/'
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD = 'Macbookair123' #my gmail password
+EMAIL_HOST_PASSWORD = 'XXXXXXXXXXXXX' #my gmail password
 EMAIL_HOST_USER = 'jevinsubedi@gmail.com' #my gmail username
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
